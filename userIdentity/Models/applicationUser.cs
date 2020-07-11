@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
 namespace userIdentity.Models
 {
-    public class applicationUser :IdentityUser
+    public class ApplicationUser :IdentityUser
     {
         [Required]
         [Display(Name ="username")]

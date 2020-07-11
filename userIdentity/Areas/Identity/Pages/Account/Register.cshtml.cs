@@ -54,6 +54,23 @@ namespace userIdentity.Areas.Identity.Pages.Account
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
+
+            [Required]
+            [Display(Name = "Name")]
+            public string Name{ get; set; }
+
+            [Required]
+            [Display(Name="Date of birth")]
+            public DateTime DOB { get; set; }
+            [Required]
+            [Display(Name = "address")]
+            public string Address { get; set; }
+
+            [Required]
+            [Display(Name = "web site")]
+            [DataType(DataType.Url)]
+            public string Url { get; set; }
+
         }
 
         public void OnGet(string returnUrl = null)
